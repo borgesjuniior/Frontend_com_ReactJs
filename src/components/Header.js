@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Header({title, children}){ //Passando as propriedades para o componente
+function Header(props){ //Passando as propriedades para o componente
     return (
         <header>
-            <h1>{title}</h1> 
+            <h1>{props.title}</h1> 
 
-            {children} 
+            {props.children} 
 
         </header>
     )
@@ -14,4 +14,4 @@ function Header({title, children}){ //Passando as propriedades para o componente
 export default Header;
 
 //title é a propriedade que foi passada para o componente
-//children dá acesso ao conteúdo que foi criado no componente
+//children dá acesso ao conteúdo que foi criado no componente 

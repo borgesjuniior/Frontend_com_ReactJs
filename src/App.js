@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import './App.css';
 import Header from './components/Header';
-
-
+import Summer from './assets/summer.jpg'
 /**
  * Componente 
  * Propriedade
@@ -22,8 +22,12 @@ function App(){
     return (
         <>
         <Header title="Projects">
+            <img width="80" src={Summer} alt="Austin Mahone"/>
             <ul>Lista de projetos</ul> 
         </Header>
+
+        
+
         <ul>
             {projects.map(project => <li key={project}>{project}</li>)}
         </ul>
